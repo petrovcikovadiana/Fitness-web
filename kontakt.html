@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- header section start      -->
+    <header>
+        <div class="logo">PETR <span>HEIN</span> </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav_bar">
+            <ul>
+                <li> <a href="index.html">DOMŮ</a></li>
+                <!-- <li> <a href="about.html">O NÁS </a></li> -->
+                <!-- <li> <a href="cenik.html">CENÍK</a></li> -->
+                <li> <a href="blog.html">BLOG</a></li>
+                <li> <a href="kontakt.html" class="active">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header section end      -->
+    <button class="debug_button" onclick="myFunction()">Toggle debug mode</button>
+
+    <!-- contact form start -->
+
+
+    <div class="contact_form">
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Kontaktuj mě</h2>
+                    <form action="mailto:diana.petrovcikova@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" name="Jmeno" class="field" placeholder="Jméno">
+                        <input type="text" name="Telefon" class="field" placeholder="Telefon">
+                        <textarea placeholder="Zpráva" name="Zprava" class="field"></textarea>
+                        <button class="btn">Odeslat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer start -->
+
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="row_footer">
+                <div class="footer_col">
+                    <h4>Fitness</h4>
+                    <ul>
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="kontakt.html">Kontaktní formulář</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_col">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li>example@gmail.com</li>
+                        <li>+420 564 567 567</li>
+                        <li>A. Jiráska 3149, 415 01 Teplice
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>Sleduj mě</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com" target="_blank" title="instagram"><img class="social_media"
+                                src="images/instagram.svg" alt=""></a>
+                        <a href="https://www.facebook.com" target="_blank" title="facebook"><img class="social_media"
+                                src="images/facebook.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+    <script>
+        // hamburger menu start
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav_bar");
+            navBar.classList.toggle("active");
+        }
+        // hamburger menu end
+        // debug button start
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("debug");
+        }
+        // debug button end
+    </script>
+
+</body>
+
+</html>
