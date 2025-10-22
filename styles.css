@@ -125,6 +125,7 @@ header {
   font-family: "Montserrat", sans-serif;
   justify-content: center;
   padding: 0 30px;
+  margin-bottom: 20px;
 }
 
 @keyframes fadeIn {
@@ -673,10 +674,6 @@ textarea {
 
 /*responsive*/
 @media (max-width: 574px) {
-  body {
-    max-width: 390px;
-  }
-
   .logo {
     font-size: 1.5em;
   }
@@ -701,9 +698,12 @@ textarea {
     display: block;
   }
 
+  .home_left_column h2 {
+    max-width: 400px;
+  }
+
   .home_left_column p {
     font-size: 14px;
-    margin: 20px 48px;
   }
 
   .grid {
