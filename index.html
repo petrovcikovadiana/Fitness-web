@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cookies.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
@@ -84,8 +86,12 @@
                         <p class="card_description">
                             <strong> INDIVIDUÁLNÍ LEKCE</strong>
                         </p>
-                        <p class="card_duration">60 min</p>
-                        <p class="card_pricing">500 Kč</p>
+                        <!-- <p class="card_duration">60 min</p> -->
+                        <ul class="card_list">
+                            <li> Úvodní trénink zaměřený na zhodnocení fyzické kondice a správnou techniku cviků
+                            </li>
+                        </ul>
+                        <p class="card_pricing">600 Kč / hod</p>
                     </div>
                 </div>
             </div>
@@ -93,12 +99,17 @@
                 <div class="card">
                     <img class="card_img" src="images/workoutt.png" alt="meal" />
                     <div class="card_content">
-                        <h1 class="card_header">5 LEKCÍ</h1>
+                        <h1 class="card_header">OD 5TI LEKCÍ</h1>
                         <p class="card_description">
                             <strong>INDIVIDUÁLNÍ LEKCE</strong>
                         </p>
-                        <p class="card_duration">5 x 60 min</p>
-                        <p class="card_pricing">2300 Kč</p>
+                        <!-- <p class="card_duration"> 60 min</p> -->
+                        <ul class="card_list">
+                            <li> Balíček pěti a více tréninků se zvýhodněnou cenou
+                            </li>
+                            <li>Postupné zlepšování kondice a techniky pod dohledem trenéra</li>
+                        </ul>
+                        <p class="card_pricing">550 Kč / hod</p>
                     </div>
                 </div>
             </div>
@@ -106,13 +117,20 @@
                 <div class="card">
                     <img class="card_img" src="images/run.png" alt="journal" />
                     <div class="card_content">
-                        <h1 class="card_header">10 LEKCÍ
+                        <h1 class="card_header">KURZ 10 LEKCÍ
                         </h1>
                         <p class="card_description">
-                            <strong>INDIVIDUÁLNÍ LEKCE</strong>
+                            <strong>INDIVIDUÁLNÍ LEKCE (vhodné pro začátečníky)</strong>
                         </p>
-                        <p class="card_duration">10 x 60 min</p>
-                        <p class="card_pricing">4500 Kč</p>
+                        <ul class="card_list">
+                            <li>10 různých lekcí s cílem naučení základních principů posilování</li>
+                            <li>Vytvoření cvičebního plánu s portfóliem jednotlivých cviků</li>
+                        </ul>
+
+
+                        <p class="card_pricing">5000 Kč / os, 3500 Kč / 2 os</p>
+
+
                     </div>
                 </div>
             </div>
@@ -131,10 +149,11 @@
                     <img class="card_img" src="images/lol.png" alt="self" />
                     <div class="card_content">
                         <p class="card_description">
-                            <strong>KRUHOVÝ TRÉNING</strong>
+                            <strong>KRUHOVÝ TRÉNINK</strong>
                         </p>
-                        <p class="card_description">Kruhový trénink je vysokointenzivní intvervalové cvičení, při kterém
-                            se na 10-15 stanovštích procvičí celé tělo.
+                        <p class="card_description">Vysokointenzivní intvervalové cvičení, při kterém
+                            se na 10-15 stanovštích procvičí celé tělo. Vhodné pro zlepšení kondice, redukci hmotnosti
+                            se současným zachováním svalové hmoty, tvarování postavy.
                         </p>
                     </div>
                 </div>
@@ -155,15 +174,14 @@
             </div>
             <div class="grid_item_lessons">
                 <div class="card">
-                    <img class="card_img" src="images/fit.png" alt="journal" />
+                    <img class="card_img" src="images/dark.jpg" alt="journal" />
                     <div class="card_content">
 
                         <p class="card_description">
-                            <strong>INDIVIDUÁLNÍ LEKCE</strong>
+                            <strong>TRÉNINK S KETTLEBELLEM</strong>
                         </p>
-                        <p class="card_description">Individuální lekce jsou vhodné pro toho, kdo na sobě chce pod
-                            dohledem systematicky pracovat. Výhodou je sestavení plánu na míru a stálá kontrola
-                            správnosti provádění cviků.
+                        <p class="card_description">Funkční trénink, který kombinuje sílu, vytrvalost, koordinaci a
+                            stabilitu.
                         </p>
                     </div>
                 </div>
@@ -179,7 +197,7 @@
                     <img class="card_img" src="images/barbell.jpg" alt="self" />
                     <div class="card_content">
                         <p class="card_description">
-                            <strong>SILOVÝ TRÉNING</strong>
+                            <strong>SILOVÝ TRÉNINK</strong>
                         </p>
                         <p class="card_description">Tento trénink je sestaven pro ty, kteří usilují o maximální
                             zvýšení síly, popřípadě objemu, je ale vhodný i pro ženy. </p>
@@ -188,13 +206,14 @@
             </div>
             <div class="grid_item_lessons">
                 <div class="card">
-                    <img class="card_img" src="images/dark.jpg" alt="meal" />
+                    <img class="card_img" src="images/wom.png" alt="meal" />
                     <div class="card_content">
                         <p class="card_description">
-                            <strong>HIIT TRÉNING</strong>
+                            <strong>HIIT TRÉNINK</strong>
                         </p>
-                        <p class="card_description">HIIT (High Intensity Interval Training) je vysoce intenzivní
-                            intervalový tréning, při němž budeš překonávat svoje hranice. </p>
+                        <p class="card_description">HIIT je vysoce intenzivní
+                            intervalový trénink, při němž budeš překonávat svoje hranice a nastartuješ svůj
+                            metabolismus. </p>
                     </div>
                 </div>
             </div>
@@ -204,7 +223,7 @@
                     <div class="card_content">
 
                         <p class="card_description">
-                            <strong>KONDIČNÍ TRÉNING</strong>
+                            <strong>KONDIČNÍ TRÉNINK</strong>
                         </p>
                         <p class="card_description">Zahrnuje pohyb o střední intenzitě zpravidla po dobu zhruba jedné
                             hodiny, a to v širokém spektru činností, které jsou často kombinovány.
@@ -212,6 +231,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -244,7 +264,6 @@
                     <h4>Fitness</h4>
                     <ul>
                         <li><a href="index.html">Domů</a></li>
-                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="kontakt.html">Kontaktní formulář</a></li>
                     </ul>
                 </div>
@@ -296,33 +315,75 @@
             hero.style.opacity = value;
         })
     </script>
+    <!-- cookies -->
+    <div class="cookies-eu-banner hidden">
+        <p class="text-background text-center text-lg font-bold pb-2">Používání souboru cookies</p>
+        <p class="text-sm text-background pb-3"> Tato stránkaa využívá cookies. Kliknutím na tlačítko "Povolit vše"
+            vyjadřujete souhlas s jejich používáním.
+        </p>
+        <div class="flex flex-row gap-5 mx-auto  items-center justify-center">
+            <button class="cookies-button-accept accept">Povolit vše</button>
+            <button class="cookies-button-decline decline">Odmítnout vše</button>
+            <button class="cookies-button-edit edit">Upravit</button>
+
+        </div>
+    </div>
+    <!-- Edit cookies -->
+    <div class="cookies-eu-edit  hidden">
+        <p class="font-bold text-lg pb-5">Použití cookies
+        </p>
+        <p class="mb-5">Tato stránka používá soubory cookies a podobné technologie, abychom vám mohli nabídnout lepší
+            uživatelský
+            zážitek, personalizovaný obsah a zobrazování reklam. Některé soubory cookies jsou nezbytné pro správné
+            fungování stránek, zatímco jiné nám pomáhají zlepšovat vaše uživatelské prostředí prostřednictvím analýzy
+            údajů. Na základě vašeho souhlasu můžeme spolupracovat s partnery, kteří shromažďují a zpracovávají údaje,
+            jako je IP adresa, informace o prohlížeči a zařízení, pro následující účely:</p>
+        <div class="flex flex-col gap-2 font-bolder">
+            <label class="flex items-center gap-2">
+                <div class=" p-4 rounded-lg w-full justify-between flex"> <span class="mr-3">Technické
+                        cookies</span>
+                    <div class="switch">
+                        <input type="checkbox" id="technical-cookies" checked disabled>
+                        <span class="slider-tech round"></span>
+                    </div>
+                </div>
+            </label>
+            <label class="flex items-center gap-2">
+                <div class="bg- p-4 rounded-lg w-full justify-between flex">
+                    <span class="mr-3">Analytické cookies</span>
+                    <div class="switch">
+                        <input type="checkbox" id="analytical-cookies">
+                        <span class="slider round"></span>
+                    </div>
+                </div>
+            </label>
+            <label class="flex items-center gap-2">
+                <div class=" p-4 rounded-lg w-full justify-between flex"><span class="mr-3">Marketingové
+                        cookies</span>
+                    <div class="switch">
+                        <input type="checkbox" id="marketing-cookies">
+                        <span class="slider round"></span>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="flex flex-row gap-5 mx-auto items-center justify-between mt-4">
+            <div class="flex flex-row gap-5  items-center justify-center">
+                <button
+                    class="cookies-button-accept accept bg-goldenYellow text-white cursor-pointer px-4 py-2 my-1 text-sm font-bold transition-colors duration-75 hover:bg-[#f3e7d6] hover:text-[#222] hover:border-transparent">Povolit
+                    vše</button>
+                <button
+                    class="cookies-button-decline decline bg-goldenYellow text-white cursor-pointer px-4 py-2 my-1 text-sm font-bold transition-colors duration-75 hover:bg-[#f3e7d6] hover:text-[#222] hover:border-transparent">Odmítnout
+                    vše</button>
+            </div>
+            <div> <button class="cookies-button-save save">Uložit nastavení</button>
+                <!-- <button class="cookies-button-cancel cancel">Zrušit</button> -->
+            </div>
+        </div>
+    </div>
 
 
-
-
-
-    <!-- test -->
-
-
-
-
-
-
-
-    <!-- test -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="cookies.js"></script>
 
 </body>
 
