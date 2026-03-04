@@ -18,7 +18,10 @@
 <body>
     <!-- header section start      -->
     <header>
-        <div class="logo">PETR <span>HEIN</span> </div>
+        <div class="logo"> <a href="index.html" class="logo">
+                PETR <span>HEIN</span>
+            </a>
+        </div>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -27,15 +30,12 @@
         <nav class="nav_bar">
             <ul>
                 <li> <a href="index.html">DOMŮ</a></li>
-                <!-- <li> <a href="about.html">O NÁS </a></li> -->
-                <!-- <li> <a href="cenik.html">CENÍK</a></li> -->
-                <!-- <li> <a href="blog.html">BLOG</a></li> -->
+
                 <li> <a href="kontakt.html" class="active">KONTAKT</a></li>
             </ul>
         </nav>
     </header>
     <!-- header section end      -->
-    <button class="debug_button" onclick="myFunction()">Toggle debug mode</button>
 
     <!-- contact form start -->
 
@@ -46,11 +46,11 @@
                 <div class="left"></div>
                 <div class="right">
                     <h2>Kontaktuj mě</h2>
-                    <form action="mailto:diana.petrovcikova@gmail.com" method="post" enctype="text/plain">
+                    <form id="contactForm">
                         <input type="text" name="Jmeno" class="field" placeholder="Jméno">
                         <input type="text" name="Telefon" class="field" placeholder="Telefon">
                         <textarea placeholder="Zpráva" name="Zprava" class="field"></textarea>
-                        <button class="btn">Odeslat</button>
+                        <button class="btn" type="submit">Odeslat</button>
                     </form>
                 </div>
             </div>
@@ -65,7 +65,6 @@
                     <h4>Fitness</h4>
                     <ul>
                         <li><a href="index.html">Domů</a></li>
-                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="kontakt.html">Kontaktní formulář</a></li>
                     </ul>
                 </div>
@@ -73,19 +72,17 @@
                 <div class="footer_col">
                     <h4>Kontakt</h4>
                     <ul>
-                        <li>example@gmail.com</li>
-                        <li>+420 564 567 567</li>
-                        <li>A. Jiráska 3149, 415 01 Teplice
-                        </li>
+                        <li>phein@seznam.cz</li>
+                        <li>+420 775 253 516</li>
                     </ul>
                 </div>
                 <div class="footer_col">
                     <h4>Sleduj mě</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com" target="_blank" title="instagram"><img class="social_media"
-                                src="images/instagram.svg" alt=""></a>
+                        <a href="https://www.instagram.com/petrhein" target="_blank" title="instagram"><img
+                                class="social_media" src="images/ig.svg" alt="instagram"></a>
                         <a href="https://www.facebook.com" target="_blank" title="facebook"><img class="social_media"
-                                src="images/facebook.svg" alt=""></a>
+                                src="images/fb.svg" alt="facebook"></a>
                     </div>
                 </div>
             </div>
@@ -93,21 +90,7 @@
     </footer>
 
     <!-- footer end -->
-    <script>
-        // hamburger menu start
-        hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function () {
-            navBar = document.querySelector(".nav_bar");
-            navBar.classList.toggle("active");
-        }
-        // hamburger menu end
-        // debug button start
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("debug");
-        }
-        // debug button end
-    </script>
+    <script src="script.js defer"></script>
 
 </body>
 
