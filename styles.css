@@ -432,6 +432,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fadeIn 5s;
+
 }
 
 .socials a:hover {
@@ -497,7 +499,7 @@ ul {
   background: url("images/contact.png") no-repeat center;
   background-size: cover;
   height: 100%;
-  animation: fadeInRight 1s ease-in-out;
+  animation: fadeIn 5s;
 }
 
 .right {
